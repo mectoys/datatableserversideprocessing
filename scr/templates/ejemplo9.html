@@ -1,0 +1,42 @@
+{% extends './base.html' %}
+{% block title %}Ejemplo9 {% endblock %}
+{% block body %}
+
+<!-- Contenedor principal -->
+    <!-- Div centrado con color llamativo y título -->
+    <div class="text-center bg-primary text-white  ">
+            <!-- Reducir el tamaño del título al 50% -->
+            <h1 class="display-5">Ejemplo 9 Server-Side Processing</h1>
+    </div>
+ <div class="row">
+     <div class="col-sm-12">
+         <table id="table_id" class="display" style="width:100%">
+             <thead>
+             <tr>
+                 <th>CO_ITEM</th>
+                  <th>DE_ITEM</th>
+             </tr>
+             </thead>
+         </table>
+
+            </div>
+     </div>
+ <script>
+     $(document).ready(function(){
+           $('#table_id').DataTable(
+            {
+              ajax:'http://127.0.0.1:5000/listproducts',
+                processing :true,
+                serverSide: true,
+
+              columns:[
+                {data: 'CO_ITEM'},
+                {data: 'DE_ITEM'},
+              ]
+            });
+
+     });
+
+ </script>
+
+{% endblock %}

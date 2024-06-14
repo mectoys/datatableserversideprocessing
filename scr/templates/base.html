@@ -17,9 +17,7 @@
        <!-- DataTables JavaScript -->
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
 
-
      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css">
-     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/2.4.3/css/scroller.dataTables.css">
 
 </head>
 
@@ -27,21 +25,19 @@
 
 <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">DATA TABLE</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">DataTable Server Side</a>
-         </li>
-
-      </ul>
-
-    </div>
-  </div>
+          <div class="container-fluid">
+                <a class="navbar-brand" href="/">DATA TABLE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="{{url_for('dtserverside_bp.showsample9') }}">DataTable Server-Side</a>
+                     </li>
+                  </ul>
+                </div>
+          </div>
 </nav>
 
 
